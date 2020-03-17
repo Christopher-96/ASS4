@@ -34,5 +34,8 @@ public class Listing {
     public void removeSelected(int i){
         list.remove(i);
     }
+    public int totalList(){
+        return list.size();
+    }
 
 }

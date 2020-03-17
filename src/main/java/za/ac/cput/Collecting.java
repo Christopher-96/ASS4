@@ -29,4 +29,7 @@ public class Collecting {
     public void removeSelected(int i){
         arrayList.remove(i);
     }
+    public int totalArrayList(){
+        return arrayList.size();
+    }
 }

@@ -14,22 +14,20 @@ public class Mapping {
     public void getAllKV(){
         for (String key : map.keySet())
             System.out.println(key + " - " + map.get(key));
-        System.out.println();
     }
 
     public void searchK(String k){
         String searchKey = k;
         if (map.containsKey(searchKey))
-            System.out.println("Found  " + map.get(searchKey) + " " + searchKey + "\n");
+            System.out.println( map.get(searchKey) + " " + searchKey);
     }
 
-    public void searchV(int v){
-        int searchValue = v;
-        if (map.containsKey(searchValue))
-            System.out.println("Found  " + map.get(searchValue) + " " + searchValue + "\n");
-    }
+
 
     public void clearAll(){
         map.clear();
+    }
+    public int totalMaps(){
+        return map.size();
     }
 }

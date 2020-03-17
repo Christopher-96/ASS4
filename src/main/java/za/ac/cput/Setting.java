@@ -23,5 +23,9 @@ public class Setting {
         set.clear();
     }
 
+    public int totalSets(){
+        return set.size();
+    }
+
 
 }
