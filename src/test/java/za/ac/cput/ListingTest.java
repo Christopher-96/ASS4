@@ -40,8 +40,10 @@ public class ListingTest {
         listing.addList(0,"Bro");
         listing.addList("bruv");
         String result = "Brother";
+        listing.updateList(1,result);
         int num = 1;
-        Assert.fail();
+        Assert.assertEquals(result,listing.getSelecedList(1));
+
 
 
     }

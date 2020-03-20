@@ -23,6 +23,10 @@ public class Listing {
             System.out.println(string);
         }
     }
+    public String getSelecedList(int i){
+        return list.get(i);
+
+    }
 
     public void updateList(int i ,String str){
         list.set(i,str);
