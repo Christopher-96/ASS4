@@ -16,10 +16,14 @@ public class Mapping {
             System.out.println(key + " - " + map.get(key));
     }
 
-    public void searchK(String k){
+    public int searchK(String k){
         String searchKey = k;
-        if (map.containsKey(searchKey))
-            System.out.println( map.get(searchKey) + " " + searchKey);
+        int result= 0;
+        if (map.containsKey(searchKey)){
+            result =map.get(searchKey);
+        }
+        return result;
+            //System.out.println( map.get(searchKey) + " " + searchKey);
     }
 
 

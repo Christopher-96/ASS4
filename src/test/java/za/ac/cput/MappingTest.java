@@ -31,8 +31,8 @@ Mapping mapping;
     public void searchK() {
         mapping.addKV("Bruh",1);
         mapping.addKV("Bro",2);
-        mapping.searchK("bro");
-        Assert.fail();
+        Assert.assertEquals(2,mapping.searchK("Bro"));
+
     }
 
 
